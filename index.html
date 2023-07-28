@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container {
+      display: grid;
+      grid-template-columns: 320px 419px;
+      grid-template-rows: 414px 325px;
+      gap: 9px;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .blue {
+      background-color: #004592;
+    }
+
+    .flexbox1 {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .flex1 {
+      height: 296px;
+    }
+
+    .flex2 {
+      height: 20px;
+    }
+
+    .innergrid {
+      display: grid;
+      grid-template-columns: 360px 50px;
+      grid-template-rows: 325px;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .grid2 {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      background-color: black
+    }
+
+    .flex3 {
+      height: 130px;
+      border-bottom: 10px solid black;
+    }
+
+    .flex4 {
+      height: 184px;
+    }
+
+    .grid1 {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      background-color: black
+    }
+
+    .flex5 {
+      height: 296px;
+    }
+
+    .flex6 {
+      height: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 9px;
+      background-color: black
+    }
+
+    .flex7 {
+      width: 198px;
+    }
+
+    .flex8 {
+      width: 153px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="1 red"></div>
+    <div class="2 white"></div>
+    <div class="3 white flexbox1">
+      <div class="flex1 white"></div>
+      <div class="flex2 white"></div>
+    </div>
+    <div class="4 white innergrid">
+      <div class="grid1 white">
+        <div class="flex5 white"></div>
+        <div class="flex6 white">
+          <div class="flex7 yellow"></div>
+          <div class="flex8 black"></div>
+        </div>
+      </div>
+      <div class="grid2 white">
+        <div class="flex3 blue"></div>
+        <div class="flex4 white"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
